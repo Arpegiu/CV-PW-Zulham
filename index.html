@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Curriculum Vitae</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #1e1e1e;
+      color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: background 0.3s;
+    }
+
+    .dark-mode .container {
+      background: #2c2c2c;
+    }
+
+    .sidebar {
+      width: 30%;
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 30px 20px;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px;
+      border: 3px solid #afafaf;
+    }
+
+    .content {
+      width: 70%;
+      padding: 40px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    button#toggle-theme {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      background: #2c3e50;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button id="toggle-theme">🌙 Dark Mode</button>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQTi88j1a-zZgutiAMHH-DtJSKWLq2bU8qXuhe96z9bUBS1j0ESMyock8b0oZTXVt6HRjudJOnDWtmpbDlHgDUd4Tk8XstIFDJBkOdo-Mwd9uocL5xIM3h_Y3s8xWX4xM7gTWx2oCF87c/s320/IMG20150801145631.jpg" alt="Foto Profil" class="profile-pic">
+      <h1>Muhammad Zulham Fahriky</h1>
+      <p class="contact">📧 zulhamfahriky@gmail.com</p>
+      <p class="contact">📞 081358307620</p>
+      <p class="contact">📍 Malang, Jawa Timur, Indonesia</p>
+
+      <h2>Keterampilan</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python & Java</li>
+        <li>Manajemen Proyek</li>
+      </ul>
+
+      <h2>Bahasa</h2>
+      <ul>
+        <li>Bahasa Indonesia (Native)</li>
+        <li>Bahasa Inggris (Intermediate)</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section>
+        <h2>Profil</h2>
+        <p>
+          Information Systems undergraduate at Brawijaya University with a strong interest in UI/UX design, Java-based application development, and the integration of Artificial Intelligence in digital solutions. Actively learning design tools like Figma, object-oriented programming, and foundational AI concepts. Highly motivated to leverage emerging technologies to build innovative, user-centric applications in collaborative environments.
+        </p>
+      </section>
+
+      <section>
+        <h2>Pendidikan</h2>
+        <div class="item">
+          <h3>S1 Sistem Informasi (2025 - Sekarang)</h3>
+          <p>Universitas Brawijaya | 2025 - Sekarang</p>
+        </div>
+        <div class="item">
+          <h3>SMA Negeri Model Terpadu Bojonegoro</h3>
+          <p>2022 - 2025</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skill</h2>
+        <div class="item">
+          <h3>Technical Skills</h3>
+          <p>UI/UX Design Tools (Figma, Canva)</p>
+          <p>Microsoft Office (Word, Excel, PowerPoint)</p>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="item">
+          <h3>Soft Skills</h3>
+          <p>Communication and Presentation</p>
+          <p>Teamwork and Collaboration</p>
+          <p>Time Management</p>
+          <p>Adaptability and Willingness to Learn</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience and Certificate</h2>
+        <div class="item">
+          <h3>uCollect Seminar by ExxonMobil on converting used cooking oil into money</h3>
+          <p>2024</p>
+        </div>
+        <div class="item">
+          <h3>Generative AI Fundamental Principles and Practical Applications | IDEA AI</h3>
+          <p>2025</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("toggle-theme").addEventListener("click", function() {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        this.textContent = "☀️ Light Mode";
+      } else {
+        this.textContent = "🌙 Dark Mode";
+      }
+    });
+  </script>
+</body>
+</html>
